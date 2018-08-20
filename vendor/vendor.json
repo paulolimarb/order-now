@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "s/jI3M5ZfkOD6WMFzZc1ndVPGNw=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "783c7ee9c14eac0e65b501664b4f553291556b43",
+			"revisionTime": "2018-01-26T03:46:11Z"
+		},
+		{
+			"checksumSHA1": "G7MxSnBfyxidM5U3P6uyzsxP40E=",
+			"path": "github.com/streadway/amqp",
+			"revision": "ff791c2d22d3f1588b4e2cc71a9fba5e1da90654",
+			"revisionTime": "2017-11-01T22:23:33Z"
+		}
+	],
+	"rootPath": "order-now"
+}
