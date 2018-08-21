@@ -3,10 +3,28 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "VMtKmB8G5idZ2yRoRXPSbNJ3ulE=",
+			"path": "github.com/Pallinder/go-randomdata",
+			"revision": "15df0648130a623e418886f81b2aaecd0a00547b",
+			"revisionTime": "2018-06-16T18:05:21Z"
+		},
+		{
 			"checksumSHA1": "s/jI3M5ZfkOD6WMFzZc1ndVPGNw=",
 			"path": "github.com/gin-gonic/gin",
 			"revision": "783c7ee9c14eac0e65b501664b4f553291556b43",
 			"revisionTime": "2018-01-26T03:46:11Z"
+		},
+		{
+			"checksumSHA1": "wp9b4E0liL1nPcGoy2PCf2Zl26A=",
+			"path": "github.com/mongodb/mongo-go-driver/mongo",
+			"revision": "e3f321c2848b138976cf8c6143aab9702e2b2fc6",
+			"revisionTime": "2018-08-16T20:57:08Z"
+		},
+		{
+			"checksumSHA1": "6zTLn61v+efbRbNytlOzHkUpJgI=",
+			"path": "github.com/smartystreets/goconvey",
+			"revision": "e5b2b7c9111590d019a696c7800593f666e1a7f4",
+			"revisionTime": "2017-08-25T22:14:26Z"
 		},
 		{
 			"checksumSHA1": "G7MxSnBfyxidM5U3P6uyzsxP40E=",
