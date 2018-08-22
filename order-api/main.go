@@ -23,7 +23,7 @@ func main() {
 
 	flag.Parse()
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	gin.SetMode(gin.DebugMode)
+	gin.SetMode(gin.ReleaseMode)
 	gin.DefaultWriter = ioutil.Discard
 	router := gin.Default()
 	router.Use(gin.Recovery())
@@ -43,6 +43,19 @@ func setConfiguration() {
 }
 
 func logo() {
-	l := `Application Init`
+	l := `
+
+  /$$$$$$                  /$$                              /$$$$$$            /$$
+ /$$__  $$                | $$                             /$$__  $$          |__/
+| $$  \ $$  /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$         | $$  \ $$  /$$$$$$  /$$
+| $$  | $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$$$$$| $$$$$$$$ /$$__  $$| $$
+| $$  | $$| $$  \__/| $$  | $$| $$$$$$$$| $$  \__/|______/| $$__  $$| $$  \ $$| $$
+| $$  | $$| $$      | $$  | $$| $$_____/| $$              | $$  | $$| $$  | $$| $$
+|  $$$$$$/| $$      |  $$$$$$$|  $$$$$$$| $$              | $$  | $$| $$$$$$$/| $$
+ \______/ |__/       \_______/ \_______/|__/              |__/  |__/| $$____/ |__/
+                                                                    | $$          
+                                                                    | $$          
+                                                                    |__/
+`
 	fmt.Println(l)
 }

@@ -35,7 +35,7 @@ func WriteMessage(body string) error {
 		false,
 		false,
 		amqp.Publishing{
-			ContentType: "text/plain",
+			ContentType: "application/json",
 			Body:        []byte(body),
 		})
 	failOnError(err, "Failed to publish a message")

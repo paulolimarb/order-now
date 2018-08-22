@@ -8,6 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func Setup(engine *gin.Engine) {
+	createOrder(engine)
+}
+
 func createOrder(engine *gin.Engine) {
 
 	engine.POST("createorder/", func(c *gin.Context) {

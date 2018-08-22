@@ -7,7 +7,7 @@ type OrderRequest struct {
 type OrderResponse struct {
 	OrderId      string `json:"order_id,omitempty"`
 	DeliveryTime string `json:"delivery_time,omitempty"`
-	Error        error  `json:"error,omitempty"`
+	Errors       errors `json:"errors,omitempty"`
 }
 
 type order struct {
@@ -26,9 +26,10 @@ type buyer struct {
 	BuyerName      string `json:"buyer_name"`
 	DocumentNumber string `json:"document_number"`
 	BuyerAddress   string `json:"buyer_address"`
+	BuyerEmail     string `json:"buyer_email"`
 }
 
-type error struct {
-	ErrorCode    string
-	ErrorMessage string
+type errors struct {
+	ErrorCode    string `json:"error_code,omitempty"`
+	ErrorMessage string `json:"error_message,omitempty"`
 }

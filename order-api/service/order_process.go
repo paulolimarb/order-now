@@ -20,12 +20,12 @@ func ProcessOrder(request io.ReadCloser) models.OrderResponse {
 	err := queue.WriteMessage(string(r))
 
 	if err != nil {
-		response.Error.ErrorCode = string(randomdata.Number(100, 500))
-		response.Error.ErrorMessage = err.Error()
+		response.Errors.ErrorCode = randomdata.StringSample("400", "500")
+		response.Errors.ErrorMessage = "Error"
 		return response
 	} else {
-		response.OrderId = string(randomdata.Number(100, 999))
-		response.DeliveryTime = string(randomdata.Number(1, 10))
+		response.OrderId = randomdata.StringNumberExt(2, "-", 5)
+		response.DeliveryTime = randomdata.StringSample("1 day", "2 days", "3 days")
 	}
 
 	return response

@@ -15,6 +15,18 @@
 			"revisionTime": "2018-01-26T03:46:11Z"
 		},
 		{
+			"checksumSHA1": "5paEOrPNmte9PRyvpBF8HTDjQD4=",
+			"path": "github.com/globalsign/mgo",
+			"revision": "46bcd340f9a57a05cb5c6cf9b0b61b1c43f6ae06",
+			"revisionTime": "2018-08-21T10:34:16Z"
+		},
+		{
+			"checksumSHA1": "xjfEsfN7ho6dDOVeUQJhW4KzD2I=",
+			"path": "github.com/globalsign/mgo/internal/scram",
+			"revision": "46bcd340f9a57a05cb5c6cf9b0b61b1c43f6ae06",
+			"revisionTime": "2018-08-21T10:34:16Z"
+		},
+		{
 			"checksumSHA1": "wp9b4E0liL1nPcGoy2PCf2Zl26A=",
 			"path": "github.com/mongodb/mongo-go-driver/mongo",
 			"revision": "e3f321c2848b138976cf8c6143aab9702e2b2fc6",
